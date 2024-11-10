@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/add"
+            app:tint="#15A966"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처 추가"
+            android:textColor="#15A966"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="+82-01-1234-5678"
+        android:textSize="40dp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:columnCount="3"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="1"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:text="2"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="3"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="4"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="5"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="6"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="7"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="8"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="9"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="*"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:text="#"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/icon_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/video"/>
+        <ImageView
+            android:id="@+id/icon_call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/call"
+            android:layout_toRightOf="@+id/icon_video"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:layout_toRightOf="@+id/icon_call"/>
+    </RelativeLayout>
+
+</LinearLayout>
